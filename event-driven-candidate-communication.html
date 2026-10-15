@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Event-Driven Candidate Communication — Olga Konovalova</title>
+  <meta name="description" content="I designed an event-driven workflow that generates personalized welcome letters after an offer is accepted, and sends them only after a People Services Consultant approves.">
+  <meta name="author" content="Olga Konovalova">
+  <meta property="og:title" content="Event-Driven Candidate Communication — Olga Konovalova">
+  <meta property="og:description" content="Automating personalized welcome letters while keeping people in control.">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../styles/styles.css">
+</head>
+<body>
+
+  <a class="skip-link" href="#content">Skip to content</a>
+
+  <nav class="nav" role="navigation" aria-label="Main navigation">
+    <div class="container">
+      <div class="nav__inner">
+        <a href="../index.html" class="nav__logo">
+          <span class="nav__logo-name">Olga Konovalova</span>
+          <span class="nav__logo-title">AI Automation Business Analyst</span>
+        </a>
+        <ul class="nav__links" role="list">
+          <li><a href="../index.html#work" class="nav__link">Work</a></li>
+          <li><a href="../index.html#approach" class="nav__link">Approach</a></li>
+          <li><a href="../index.html#about" class="nav__link">About</a></li>
+          <li><a href="../index.html#contact" class="nav__link">Contact</a></li>
+        </ul>
+        <div class="nav__actions">
+          <a href="https://www.linkedin.com/in/olga-konovalova-4b35ab267" target="_blank" rel="noopener noreferrer" class="btn btn--outline">LinkedIn</a>
+        </div>
+        <button class="nav__hamburger" aria-label="Open menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+  <div class="nav__mobile" role="dialog" aria-modal="true">
+    <ul role="list">
+      <li><a href="../index.html#work" class="nav__mobile-link">Work</a></li>
+      <li><a href="../index.html#approach" class="nav__mobile-link">Approach</a></li>
+      <li><a href="../index.html#about" class="nav__mobile-link">About</a></li>
+      <li><a href="../index.html#contact" class="nav__mobile-link">Contact</a></li>
+    </ul>
+    <div class="nav__mobile-actions">
+      <a href="https://www.linkedin.com/in/olga-konovalova-4b35ab267" target="_blank" rel="noopener noreferrer" class="btn btn--primary">LinkedIn</a>
+      <a href="mailto:olga.konovalova.ai@gmail.com?subject=CV%20request" class="btn btn--outline">Request CV</a>
+    </div>
+  </div>
+
+  <header id="content" class="page-hero">
+    <div class="container">
+
+      <nav class="breadcrumb" aria-label="Breadcrumb">
+        <a href="../index.html">Home</a>
+        <span class="breadcrumb__sep" aria-hidden="true">/</span>
+        <a href="../index.html#work">Work</a>
+        <span class="breadcrumb__sep" aria-hidden="true">/</span>
+        <span aria-current="page">Candidate Communication</span>
+      </nav>
+
+      <div class="page-hero__tags">
+        <span class="status-badge status-badge--production">Production</span>
+        <span class="tag tag--blue">Event-driven</span>
+        <span class="tag tag--blue">Human approval</span>
+      </div>
+
+      <h1 class="page-hero__headline">Event-Driven Candidate Communication</h1>
+
+      <p class="page-hero__subtitle">
+        Automating personalized welcome letters while keeping people in control.
+      </p>
+
+      <div class="page-hero__meta">
+        <div class="page-hero__meta-item">
+          <span class="page-hero__meta-label">Domain</span>
+          <span class="page-hero__meta-value">Talent Acquisition · Candidate Experience</span>
+        </div>
+        <div class="page-hero__meta-item">
+          <span class="page-hero__meta-label">Role</span>
+          <span class="page-hero__meta-value">Business Analyst · Solution Designer</span>
+        </div>
+        <div class="page-hero__meta-item">
+          <span class="page-hero__meta-label">Tech stack</span>
+          <span class="page-hero__meta-value">Power Automate · Copilot Studio · Enterprise APIs · Event Subscription</span>
+        </div>
+        <div class="page-hero__meta-item">
+          <span class="page-hero__meta-label">Status</span>
+          <span class="page-hero__meta-value">Production</span>
+        </div>
+      </div>
+
+    </div>
+  </header>
+
+  <main class="case-body">
+    <div class="container">
+      <article class="case-article">
+
+        <section class="cs" aria-labelledby="challenge-title">
+          <p class="cs__label">The challenge</p>
+          <h2 class="cs__title" id="challenge-title">A personal welcome letter shouldn't require repetitive manual work.</h2>
+          <div class="cs__body">
+            <p>When a candidate accepts an offer, People Services Consultants (PSCs) prepare and send a personalized Welcome Letter.</p>
+            <p>Previously, this meant monitoring offer statuses, gathering candidate information from multiple systems, drafting the letter, and sending it manually.</p>
+            <p>The goal was to reduce repetitive work and deliver timely communication without removing human oversight.</p>
+          </div>
+        </section>
+
+        <section class="cs" aria-labelledby="contribution-title">
+          <p class="cs__label">My contribution</p>
+          <h2 class="cs__title" id="contribution-title">Designing automation around the right event and decision.</h2>
+          <div class="cs__body">
+            <p>I owned the business analysis and solution design, from defining requirements to supporting testing and release.</p>
+          </div>
+          <div class="contribution-grid">
+            <div class="contrib-item"><span><strong>Event-driven workflow.</strong> Defined offer-status triggers and eligibility rules so processing starts only for relevant candidates.</span></div>
+            <div class="contrib-item"><span><strong>Data integration.</strong> Mapped offer, employee, and applicant information required to personalize each letter.</span></div>
+            <div class="contrib-item"><span><strong>AI integration.</strong> Defined Copilot Studio requirements for generating personalized Welcome Letters.</span></div>
+            <div class="contrib-item"><span><strong>Human approval.</strong> Designed approval and rejection paths, ensuring no external communication is sent without PSC authorization.</span></div>
+            <div class="contrib-item"><span><strong>Validation.</strong> Defined acceptance criteria, edge cases, and testing scenarios.</span></div>
+          </div>
+        </section>
+
+        <section class="cs" aria-labelledby="solution-title">
+          <p class="cs__label">The solution</p>
+          <h2 class="cs__title" id="solution-title">From offer acceptance to an approved welcome letter.</h2>
+          <div class="cs__body">
+            <p>Instead of checking offer statuses on a schedule, the workflow reacts to relevant status-change events.</p>
+            <p>Power Automate validates eligibility, retrieves information from enterprise systems, and uses Copilot Studio to generate a personalized Welcome Letter.</p>
+          </div>
+
+          <figure class="arch-diagram">
+            <figcaption class="arch-diagram__title">Offer status event to PSC approval</figcaption>
+            <ol class="arch-flow">
+              <li class="arch-step">
+                <div class="arch-node">
+                  <span class="arch-node__name">Offer Status Event</span>
+                  <span class="arch-node__detail">Real-time notification</span>
+                </div>
+              </li>
+              <li class="arch-step">
+                <div class="arch-node arch-node--highlight">
+                  <span class="arch-node__name">Power Automate</span>
+                  <span class="arch-node__detail">Eligibility checks and data enrichment</span>
+                </div>
+              </li>
+              <li class="arch-step">
+                <div class="arch-node">
+                  <span class="arch-node__name">Copilot Studio</span>
+                  <span class="arch-node__detail">Personalized letter generation</span>
+                </div>
+              </li>
+              <li class="arch-step">
+                <div class="arch-node">
+                  <span class="arch-node__name">PSC Review and Approval</span>
+                  <span class="arch-node__detail">Human decision required</span>
+                </div>
+              </li>
+            </ol>
+            <div class="arch-split-wrap">
+              <div class="arch-split">
+                <div class="arch-branch">
+                  <div class="arch-node arch-node--primary">
+                    <span class="arch-node__name">Approved</span>
+                    <span class="arch-node__detail">Automatic email to the candidate</span>
+                  </div>
+                </div>
+                <div class="arch-branch">
+                  <div class="arch-node">
+                    <span class="arch-node__name">Rejected</span>
+                    <span class="arch-node__detail">Editable draft returned to the PSC</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </figure>
+
+          <div class="cs__body">
+            <p>The draft is then sent to a PSC for review:</p>
+            <p><strong>Approved:</strong> The letter is automatically emailed to the candidate.</p>
+            <p><strong>Rejected:</strong> An editable draft is returned to the PSC for revision.</p>
+            <p>No letter is sent externally without explicit human approval.</p>
+          </div>
+        </section>
+
+        <section class="cs" aria-labelledby="decisions-title">
+          <p class="cs__label">Key design decisions</p>
+          <h2 class="cs__title" id="decisions-title">The event, the data, and the approval.</h2>
+          <div class="decision-list">
+            <article class="decision-card">
+              <h3>Event-driven instead of scheduled</h3>
+              <p>The workflow responds to relevant status changes rather than repeatedly checking for updates, reducing unnecessary processing delays.</p>
+            </article>
+            <article class="decision-card">
+              <h3>Multi-source personalization</h3>
+              <p>Candidate, offer, and employee data are combined to generate context-specific communication.</p>
+            </article>
+            <article class="decision-card">
+              <h3>Human-in-the-loop approval</h3>
+              <p>The PSC makes the final decision, preserving accountability for candidate-facing messages.</p>
+            </article>
+          </div>
+        </section>
+
+        <section class="cs" aria-labelledby="outcome-title">
+          <p class="cs__label">Outcome</p>
+          <h2 class="cs__title" id="outcome-title">Released to production, with approval still required.</h2>
+          <div class="cs__body">
+            <p>The solution was released to production, replacing manual letter preparation with automated generation and an approval-based workflow.</p>
+            <p>PSCs can review a prepared letter instead of drafting one from scratch, while maintaining control over what candidates receive.</p>
+          </div>
+          <aside class="pull-quote" aria-label="Takeaway">
+            <p class="pull-quote__text">The project demonstrates how I design event-driven automation that balances operational efficiency, AI capabilities, and human oversight.</p>
+          </aside>
+        </section>
+
+      </article>
+    </div>
+  </main>
+
+  <nav class="case-nav" aria-label="Other case studies">
+    <div class="container">
+      <div class="case-nav__inner">
+        <div class="case-nav__item">
+          <div class="case-nav__dir">← Previous</div>
+          <a href="enterprise-ta-knowledge-assistant.html" class="case-nav__link">← Enterprise Knowledge Assistant</a>
+        </div>
+        <div class="case-nav__divider" aria-hidden="true"></div>
+        <div class="case-nav__item case-nav__item--next">
+          <div class="case-nav__dir">All work →</div>
+          <a href="../index.html#work" class="case-nav__link">View All Case Studies →</a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer__inner">
+        <div class="footer__brand">
+          <span class="footer__name">Olga Konovalova</span>
+          <span class="footer__title">AI Automation Business Analyst</span>
+        </div>
+        <p class="footer__note">
+          Case studies have been sanitised. Personal data, internal links, confidential identifiers and sensitive implementation details have been removed or generalised.
+        </p>
+        <nav class="footer__links" aria-label="Footer links">
+          <a href="../index.html" class="footer__link">Home</a>
+          <a href="../index.html#work" class="footer__link">Work</a>
+          <a href="mailto:olga.konovalova.ai@gmail.com" class="footer__link">Email</a>
+        </nav>
+      </div>
+    </div>
+  </footer>
+
+  <div class="modal-overlay" role="dialog" aria-modal="true" aria-label="Image viewer">
+    <div class="modal-inner">
+      <button class="modal-close" aria-label="Close">&times;</button>
+      <img class="modal-img" src="" alt="">
+    </div>
+  </div>
+
+  <script src="../scripts/main.js" defer></script>
+</body>
+</html>
